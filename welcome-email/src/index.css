@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Define your custom colors */
+@theme {
+	--color-primary: #151515;
+	--color-primary-100: #252525;
+	--color-primary-200: #2f2f2f;
+	--color-surface: #151515;
+	--color-surface-muted: #252525;
+	--color-surface-light: #2f2f2f;
+	--color-secondary: #c5c5c5;
+	--color-secondary-100: #999999;
+	--color-secondary-200: #4d4d4d;
+	--color-highlight: #b3b3ff;
+	--color-highlight-100: #e6e6ff;
+	--color-highlight-200: #d3d3ff;
+	--color-progress: #a2c48d;
+	--color-danger: #ef476f;
+}
