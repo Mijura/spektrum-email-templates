@@ -13,6 +13,12 @@ import {
 	Link,
 	Img,
 } from "@react-email/components"
+import Discord from "./icons/discord"
+import X from "./icons/x"
+import Reddit from "./icons/reddit"
+import YouTube from "./icons/youtube"
+import TikTok from "./icons/github"
+import Github from "./icons/github"
 
 interface Props {
 	url: string
@@ -58,25 +64,30 @@ export default function WelcomeEmail({ url }: Props) {
 							</tr>
 							<tr>
 								<td align="center">
-									<Row className="table-cell h-[88px] w-[112px] align-bottom">
+									<Row className="table-cell h-[88px] w-[112px] align-bottom flexgap-4">
 										<Column className="pr-[8px]">
-											<Link href="#">
-												<Img alt="Facebook" height="72" src="https://react.email/static/facebook-logo.png" width="72" />
+											<Link href="https://github.com/jigjoy-ai" target="_blank">
+												<Github />
 											</Link>
 										</Column>
 										<Column className="pr-[8px]">
-											<Link href="#">
-												<Img alt="X" height="72" src="https://react.email/static/x-logo.png" width="72" />
+											<Link href="https://discord.gg/dvxY9J2kWX" target="_blank">
+												<Discord />
 											</Link>
 										</Column>
-										<Column>
-											<Link href="#">
-												<Img
-													alt="Instagram"
-													height="72"
-													src="https://react.email/static/instagram-logo.png"
-													width="72"
-												/>
+										<Column className="pr-[8px]">
+											<Link href="https://www.youtube.com/@JigJoy_io" target="_blank">
+												<YouTube />
+											</Link>
+										</Column>
+										<Column className="pr-[8px]">
+											<Link href="https://x.com/jigjoy_io" target="_blank">
+												<X />
+											</Link>
+										</Column>
+										<Column className="pr-[8px]">
+											<Link href="https://www.reddit.com/r/JigJoy/" target="_blank">
+												<Reddit />
 											</Link>
 										</Column>
 									</Row>
