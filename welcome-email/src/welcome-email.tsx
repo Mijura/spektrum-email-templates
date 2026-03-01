@@ -13,18 +13,14 @@ import {
 	Link,
 	Img,
 	Font,
+	Hr,
 } from "@react-email/components"
-import Discord from "./icons/discord"
-import X from "./icons/x"
-import Reddit from "./icons/reddit"
-import YouTube from "./icons/youtube"
-import Github from "./icons/github"
 
 interface Props {
-	url: string
+	loginLink: string
 }
 
-export default function WelcomeEmail({ url }: Props) {
+export default function WelcomeEmail({ loginLink }: Props) {
 	return (
 		<Html>
 			<Head>
@@ -49,10 +45,10 @@ export default function WelcomeEmail({ url }: Props) {
 							We felt it the first time we wrote a recursive function correctly and watched it run exactly as it should.
 						</Text>
 
-						<hr className="my-4 text-[#a2c48d]" />
+						<Hr className="my-4 border-[#a2c48d]" />
 						<Text>Our mission is to help everyone experience that same rush.</Text>
 						<Text>Now it’s your turn.</Text>
-						<Button href={url} className="bg-[#b3b3ff] text-[#151515] p-2 rounded-md">
+						<Button href={loginLink} className="px-3 py-1.5 bg-[#b3b3ff] text-[#151515] rounded-sm">
 							Log in. Build something. Feel the JigJoy.
 						</Button>
 						<table className="w-full mt-8 gap-4">
@@ -66,35 +62,71 @@ export default function WelcomeEmail({ url }: Props) {
 						<table className="w-full mt-10">
 							<tr className="w-full">
 								<td align="center">
-									<Img alt="JigJoy logo" height="124" src="https://www.jigjoy.io/logos/jigjoy.svg" width="124" />
+									<Img alt="JigJoy logo" height="124" src="https://www.jigjoy.ai/logos/jigjoy.png" width="124" />
 								</td>
 							</tr>
 							<tr>
 								<td align="center">
-									<Row className="table-cell h-[88px] w-[112px] align-bottom flexgap-4">
-										<Column className="pr-[8px]">
+									<Row className="table-cell h-[50px] align-bottom flexgap-4">
+										<Column style={{ 
+											backgroundColor: '#151515', 
+											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
+											borderRadius: '4px',
+											padding: '8px',
+											marginRight: '8px',
+											display: 'inline-block',
+										}}>
 											<Link href="https://github.com/jigjoy-ai" target="_blank">
-												<Github />
+												<Img src="https://www.jigjoy.ai/icons/github.png" alt="GitHub" width={25} height={24} />
 											</Link>
 										</Column>
-										<Column className="pr-[8px]">
+										<Column style={{ 
+											backgroundColor: '#151515', 
+											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
+											borderRadius: '4px',
+											padding: '8px',
+											marginRight: '8px',
+											display: 'inline-block',
+										}}>
 											<Link href="https://discord.gg/dvxY9J2kWX" target="_blank">
-												<Discord />
+												<Img src="https://www.jigjoy.ai/icons/discord.png" alt="Discord" width={25} height={24} />
 											</Link>
 										</Column>
-										<Column className="pr-[8px]">
+										<Column style={{ 
+											backgroundColor: '#151515', 
+											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
+											borderRadius: '4px',
+											padding: '8px',
+											marginRight: '8px',
+											display: 'inline-block',
+										}}>
 											<Link href="https://www.youtube.com/@JigJoy_io" target="_blank">
-												<YouTube />
+												<Img src="https://www.jigjoy.ai/icons/youtube.png" alt="YouTube" width={36} height={24} />
 											</Link>
 										</Column>
-										<Column className="pr-[8px]">
-											<Link href="https://x.com/jigjoy_io" target="_blank">
-												<X />
-											</Link>
-										</Column>
-										<Column className="pr-[8px]">
+
+										<Column style={{ 
+											backgroundColor: '#151515', 
+											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
+											borderRadius: '4px',
+											padding: '8px',
+											marginRight: '8px',
+											display: 'inline-block',
+										}}>
 											<Link href="https://www.reddit.com/r/JigJoy/" target="_blank">
-												<Reddit />
+												<Img src="https://www.jigjoy.ai/icons/reddit.png" alt="Reddit" width={24} height={24} />
+											</Link>
+										</Column>
+										<Column style={{ 
+											backgroundColor: '#151515', 
+											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
+											borderRadius: '4px',
+											padding: '8px',
+											marginRight: '8px',
+											display: 'inline-block',
+										}}>
+											<Link href="https://x.com/jigjoy_io" target="_blank">
+												<Img src="https://www.jigjoy.ai/icons/x.png" alt="X" width={24} height={24} />
 											</Link>
 										</Column>
 									</Row>
@@ -102,10 +134,10 @@ export default function WelcomeEmail({ url }: Props) {
 							</tr>
 							<tr>
 								<td align="center">
-									<Text className="my-[8px] leading-[24px]">
+									<Text className="my-[8px]">
 										Fruškogorska 1, Science & Technology Park, Novi Sad, Serbia
 									</Text>
-									<Text className="mt-[4px] mb-0 leading-[24px]">team@jigjoy.ai</Text>
+									<Link href="mailto:team@jigjoy.ai" className="mt-[4px] text-[#c5c5c5] mb-0 no-underline">team@jigjoy.ai</Link>
 								</td>
 							</tr>
 						</table>

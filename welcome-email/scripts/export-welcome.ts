@@ -6,9 +6,10 @@ import fs from "fs"
 
 const html = await render(
 	React.createElement(WelcomeEmail, {
-		url: "{{url}}",
+		loginLink: "{{loginLink}}",
 	}),
 )
 
+fs.mkdirSync("./output", { recursive: true })
 fs.writeFileSync("./output/welcome.html", html)
 console.log("Done!")

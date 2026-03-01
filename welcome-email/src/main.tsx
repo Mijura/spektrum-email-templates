@@ -5,6 +5,6 @@ import WelcomeEmail from "./welcome-email"
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
 	<React.StrictMode>
-		<WelcomeEmail url="https://jigjoy.ai" />
+		<WelcomeEmail loginLink="https://jigjoy.ai" />
 	</React.StrictMode>,
 )
