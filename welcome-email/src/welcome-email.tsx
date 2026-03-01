@@ -12,12 +12,12 @@ import {
 	Column,
 	Link,
 	Img,
+	Font,
 } from "@react-email/components"
 import Discord from "./icons/discord"
 import X from "./icons/x"
 import Reddit from "./icons/reddit"
 import YouTube from "./icons/youtube"
-import TikTok from "./icons/github"
 import Github from "./icons/github"
 
 interface Props {
@@ -27,10 +27,17 @@ interface Props {
 export default function WelcomeEmail({ url }: Props) {
 	return (
 		<Html>
-			<Head />
+			<Head>
+				<Font
+					fontFamily='ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'
+					fallbackFontFamily="sans-serif"
+					fontWeight={400}
+					fontStyle="normal"
+				/>
+			</Head>
 			<Body>
 				<Tailwind>
-					<Section className="w-full py-10 px-6 flex-col bg-surface text-secondary flex items-center justify-center">
+					<Section className="w-full py-10 px-6 flex-col bg-[#151515] text-[#c5c5c5] flex items-center justify-center">
 						<Heading as="h1" className="text-xl font-semibold">
 							Hey there, welcome to JigJoy!
 						</Heading>
@@ -42,10 +49,10 @@ export default function WelcomeEmail({ url }: Props) {
 							We felt it the first time we wrote a recursive function correctly and watched it run exactly as it should.
 						</Text>
 
-						<hr className="my-4 text-progress" />
+						<hr className="my-4 text-[#a2c48d]" />
 						<Text>Our mission is to help everyone experience that same rush.</Text>
 						<Text>Now it’s your turn.</Text>
-						<Button href={url} className="bg-highlight text-surface p-2 rounded-md">
+						<Button href={url} className="bg-[#b3b3ff] text-[#151515] p-2 rounded-md">
 							Log in. Build something. Feel the JigJoy.
 						</Button>
 						<table className="w-full mt-8 gap-4">
