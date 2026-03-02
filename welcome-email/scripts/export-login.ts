@@ -2,7 +2,7 @@
 import { render } from "@react-email/render"
 import React from "react"
 import fs from "fs"
-import LoginEmail from "../src/login"
+import LoginEmail from "../src/emails/login"
 
 const html = await render(
 	React.createElement(LoginEmail, {

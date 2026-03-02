@@ -38,12 +38,11 @@ export default function LoginEmail({ loginLink, expirationInMinutes }: Props) {
 						<Heading as="h1" className="text-xl font-semibold">
 							Hey there, glad to see you again!
 						</Heading>
-						<Button href={loginLink} className="px-3 py-1.5 bg-[#b3b3ff] text-[#151515] rounded-sm">
+						<Button href={loginLink} className="px-4 py-2 bg-[#b3b3ff] text-[#151515] rounded-sm">
 							Click here to login
 						</Button>
-						<Text className="mt-4">
-							This link will only be valid for the next {expirationInMinutes} minutes.
-						</Text>
+						<Text>This link will only be valid for the next {expirationInMinutes} minutes.</Text>
+						<Hr className="my-4 border-[#a2c48d]" />
 						<table className="w-full mt-8 gap-4">
 							<tr>
 								<td className="text-left">Best,</td>
@@ -61,63 +60,73 @@ export default function LoginEmail({ loginLink, expirationInMinutes }: Props) {
 							<tr>
 								<td align="center">
 									<Row className="table-cell h-[50px] align-bottom flexgap-4">
-										<Column style={{ 
-											backgroundColor: '#151515', 
-											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
-											borderRadius: '4px',
-											padding: '8px',
-											marginRight: '8px',
-											display: 'inline-block',
-										}}>
+										<Column
+											style={{
+												backgroundColor: "#151515",
+												backgroundImage: "linear-gradient(#151515, #151515)", // Forces Gmail to keep it white
+												borderRadius: "4px",
+												padding: "8px",
+												marginRight: "8px",
+												display: "inline-block",
+											}}
+										>
 											<Link href="https://github.com/jigjoy-ai" target="_blank">
 												<Img src="https://www.jigjoy.ai/icons/github.png" alt="GitHub" width={25} height={24} />
 											</Link>
 										</Column>
-										<Column style={{ 
-											backgroundColor: '#151515', 
-											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
-											borderRadius: '4px',
-											padding: '8px',
-											marginRight: '8px',
-											display: 'inline-block',
-										}}>
+										<Column
+											style={{
+												backgroundColor: "#151515",
+												backgroundImage: "linear-gradient(#151515, #151515)", // Forces Gmail to keep it white
+												borderRadius: "4px",
+												padding: "8px",
+												marginRight: "8px",
+												display: "inline-block",
+											}}
+										>
 											<Link href="https://discord.gg/dvxY9J2kWX" target="_blank">
 												<Img src="https://www.jigjoy.ai/icons/discord.png" alt="Discord" width={25} height={24} />
 											</Link>
 										</Column>
-										<Column style={{ 
-											backgroundColor: '#151515', 
-											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
-											borderRadius: '4px',
-											padding: '8px',
-											marginRight: '8px',
-											display: 'inline-block',
-										}}>
+										<Column
+											style={{
+												backgroundColor: "#151515",
+												backgroundImage: "linear-gradient(#151515, #151515)", // Forces Gmail to keep it white
+												borderRadius: "4px",
+												padding: "8px",
+												marginRight: "8px",
+												display: "inline-block",
+											}}
+										>
 											<Link href="https://www.youtube.com/@JigJoy_io" target="_blank">
 												<Img src="https://www.jigjoy.ai/icons/youtube.png" alt="YouTube" width={36} height={24} />
 											</Link>
 										</Column>
 
-										<Column style={{ 
-											backgroundColor: '#151515', 
-											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
-											borderRadius: '4px',
-											padding: '8px',
-											marginRight: '8px',
-											display: 'inline-block',
-										}}>
+										<Column
+											style={{
+												backgroundColor: "#151515",
+												backgroundImage: "linear-gradient(#151515, #151515)", // Forces Gmail to keep it white
+												borderRadius: "4px",
+												padding: "8px",
+												marginRight: "8px",
+												display: "inline-block",
+											}}
+										>
 											<Link href="https://www.reddit.com/r/JigJoy/" target="_blank">
 												<Img src="https://www.jigjoy.ai/icons/reddit.png" alt="Reddit" width={24} height={24} />
 											</Link>
 										</Column>
-										<Column style={{ 
-											backgroundColor: '#151515', 
-											backgroundImage: 'linear-gradient(#151515, #151515)', // Forces Gmail to keep it white
-											borderRadius: '4px',
-											padding: '8px',
-											marginRight: '8px',
-											display: 'inline-block',
-										}}>
+										<Column
+											style={{
+												backgroundColor: "#151515",
+												backgroundImage: "linear-gradient(#151515, #151515)", // Forces Gmail to keep it white
+												borderRadius: "4px",
+												padding: "8px",
+												marginRight: "8px",
+												display: "inline-block",
+											}}
+										>
 											<Link href="https://x.com/jigjoy_io" target="_blank">
 												<Img src="https://www.jigjoy.ai/icons/x.png" alt="X" width={24} height={24} />
 											</Link>
@@ -127,10 +136,10 @@ export default function LoginEmail({ loginLink, expirationInMinutes }: Props) {
 							</tr>
 							<tr>
 								<td align="center">
-									<Text className="my-[8px]">
-										Fruškogorska 1, Science & Technology Park, Novi Sad, Serbia
-									</Text>
-									<Link href="mailto:team@jigjoy.ai" className="mt-[4px] text-[#c5c5c5] mb-0 no-underline">team@jigjoy.ai</Link>
+									<Text className="my-[8px]">Fruškogorska 1, Science & Technology Park, Novi Sad, Serbia</Text>
+									<Link href="mailto:team@jigjoy.ai" className="mt-[4px] text-[#c5c5c5] mb-0 no-underline">
+										team@jigjoy.ai
+									</Link>
 								</td>
 							</tr>
 						</table>
