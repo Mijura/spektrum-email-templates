@@ -8,8 +8,6 @@ import {
 	Heading,
 	Tailwind,
 	Section,
-	Row,
-	Column,
 	Link,
 	Img,
 	Font,
