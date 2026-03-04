@@ -67,7 +67,7 @@ export default function WelcomeEmail({ loginLink }: Props) {
 							<tr>
 								<td align="center">
 									<Text className="my-[8px]">Fruškogorska 1, Science & Technology Park, Novi Sad, Serbia</Text>
-									<Link href="mailto:team@mail.jigjoy.ai" className="mt-[4px] text-[#c5c5c5] mb-0 no-underline">
+									<Link href="mailto:team@mail.jigjoy.ai" className="mt-[4px] mb-0 no-underline text-[#151515]">
 										team@mail.jigjoy.ai
 									</Link>
 								</td>
