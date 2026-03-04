@@ -9,7 +9,8 @@
 		"build": "rspack --config configs/rspack.prod.js",
 		"format": "prettier --write \"src/**/*.{ts,tsx}\"",
 		"export:welcome": "npx tsx scripts/export-welcome.ts",
-		"export:login": "npx tsx scripts/export-login.ts"
+		"export:login": "npx tsx scripts/export-login.ts",
+		"export:purchase": "npx tsx scripts/export-purchase.ts"
 	},
 	"devDependencies": {
 		"@rspack/cli": "^1.7.5",
