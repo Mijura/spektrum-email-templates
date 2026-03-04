@@ -78,7 +78,6 @@ export default function PurchaseEmail({ numberOfCredits, estimatedTaskExecutions
 
 <Hr className="my-4 border-[#a2c48d]" />
 <Text className="m-0">Your invoice for ${numberOfCredits} is attached.</Text>
-<Text className="m-0">Transaction ID: {transactionId}</Text>
 						<table className="w-full mt-8 gap-4">
 							<tr>
 								<td className="text-left">Best,</td>
